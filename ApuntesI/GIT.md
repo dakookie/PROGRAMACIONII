@@ -42,4 +42,3 @@ GitHub es un servicio basado en la nube que aloja un sistema de control de versi
 
   echo nombreArchivo.ext >> .gitignore
   + ***echo *.txt >> .gitignore***
-
