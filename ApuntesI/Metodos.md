@@ -274,3 +274,6 @@ public class AreaRectangulo {
     }
 }
 ```
+
+> ## Flujograma Números Pares
+![flujograma](flujogramaPares.png)
