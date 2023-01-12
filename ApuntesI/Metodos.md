@@ -1,13 +1,12 @@
-# Entrada de Datos/Metodos
+# **<span style="color:blue">Entrada de Datos/Metodos</span>**
 
----
-Fecha: 07/12/2022
+**Fecha: 07/12/2022**
 
 + ***Cast***: Sirve para convertir un tipo de dato a otro. Existen dos tipos de conversiones:
   + Implícita
   + Explícita
 
-### Secuencias de escape
+> ### **<span style="color:blue">Secuencias de escape</span>**
 
 + \t --> mover el cursor al siguiente tabulador
 + \n --> salto de línea: avanza a la primera columna en el siguiente renglón
@@ -16,25 +15,25 @@ Fecha: 07/12/2022
 + \' --> imprime una literal con comilla sencilla
 + \\ --> imprime una diagonal invertida
 
-### Variables primitivas
+> ### **<span style="color:blue">Variables primitivas</span>**
 
 + int, long (tipos enteros)
 + float, double (tipos de punto flotante)
 + char (tipo carácter)
 
-### Variables de referencia
+> ### **<span style="color:blue">Entrada de Datos/Metodos</span>**
 
 + String name = "Thanh Nguyen";
 + Calendar fechaNac;
 
-### String : str
+> ### **<span style="color:blue">String : str</span>**
 
 + ***charAt(index)*** // obtener un carácter
 + ***Length*** // obtener la longitud del string
 + ***Equals*** // comparación 
 + ***equalsIgnoreCase*** // ignorar si es mayúsculas o minúscula 
 
-### Scanner : std
+> ### **<span style="color:blue">EScanner : std</span>**
 
 + Scanner stdIn = new Scanner(System.in);
 + <variable> = stdIn.nextLine();
@@ -45,14 +44,14 @@ Fecha: 07/12/2022
 “salta los espacios dejados en blanco ”
 + ***next()*** --> Se salta los espacios dejados en blanco hasta que encuentra un token. Devuelve el token como un valor tipo String.
 
-### Arrays
+> ### **<span style="color:blue">Arrays</span>**
 
 + Se utilizan los corchetes.
 + EOF : Final de lectura para un arreglo
 
 ---
 
-> ## Código(Métodos que no retornan valor)
+> ## **<span style="color:skyblue">Entrada de Datos/MetodosCódigo(Métodos que no retornan valor)</span>**
 
 ```java
 import java.util.Scanner;
@@ -142,7 +141,7 @@ public class AreaRectangulo {
 
 ---
 
-> ## Métodos que retornan valor
+> ## **<span style="color:skyblue">Métodos que retornan valor</span>**
 
 + El void en el método desaperece y se reemplaza por el tipo de valor que quiero retornar.
 + Se utiliza el ***return***.
@@ -150,7 +149,7 @@ public class AreaRectangulo {
 
 ---
 
-> ## Codigo (Métodos que retornan valor)
+> ## **<span style="color:blue">Codigo (Métodos que retornan valor)</span>**
 ```java
 import java.util.Scanner;
 /**
@@ -275,5 +274,6 @@ public class AreaRectangulo {
 }
 ```
 
-> ## Flujograma Números Pares
+> ## **<span style="color:skyblue">Flujograma Números Pares</span>**
+
 ![flujograma](flujogramaPares.png)

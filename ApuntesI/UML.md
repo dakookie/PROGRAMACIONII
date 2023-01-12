@@ -1,7 +1,6 @@
-# Modelado O.O - UML
+# **<span style="color:lime">Modelado O.O - UML</span>**
 
----
-Fecha: 20/12/2022
+**Fecha: 20/12/2022**
 
 + ***UML*** --> permite modelar todos los estilos de negocio o acoplandose con un giro de negocio que ya existe.
 + ***Modelado***: Permite pasar de un nivel dveloper a un nivel architect
@@ -12,7 +11,7 @@ Link para más información acerca de ***UML***:
 
 ---
 
-## Casos de uso
+> ## **<span style="color:coral">Casos de uso</span>**
 
 + Equivalente a describir un escenario.
 + Se utilizan tres simbologías: 
@@ -41,7 +40,7 @@ Link para más información acerca de ***UML***:
    ![flechas](casoUso.png)
 
 ---
-> ## Notas
+> ## **<span style="color:coral">Notas</span>**
 
 + Los objetos no se duplican.
 + El constructor se ejecuta una única vez.

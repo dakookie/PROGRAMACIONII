@@ -1,7 +1,6 @@
-# Herencia (Padre-Hijo)
+# **<span style="color:orchid"> Herencia (Padre-Hijo) </span>**
 
----
-Fecha: 13/12/2022
+**Fecha: 13/12/2022**
 
 + Para llamar un pk desde main se deber hacer:
   main {
@@ -9,7 +8,8 @@ Fecha: 13/12/2022
   }
 + Creo el objeto y debo inmediatamente ir al constructor.
 
-> ### Cosas que debe cumplir un constructor(concepto de POO)**
+
+> ### **<span style="color:purple"> Cosas que debe cumplir un constructor(concepto de POO)</span>**
 
 + Los constructores están dentro del método.
 + Los metodos se definen solo con la palabra “new”.
@@ -18,15 +18,15 @@ Fecha: 13/12/2022
 + Los constructores me sirven para inicializar valores.
 + Sobrecarga (concepto de POO)
 
-> ### Otros conceptos importantes
+> ### **<span style="color:purple"> Otros conceptos importantes</span>**
 
-+ “This.” hace referencia a las propiedades de la clase, siempre que estemos dentro de la clase se utiliza el this para referenciar
++ **“This.”:** hace referencia a las propiedades de la clase, siempre que estemos dentro de la clase se utiliza el this para referenciar
   + Sintaxis --> ***this.----***
-+ Shift + alt  (corte vertical) : sirve para seleccionar de manera vertical para cortar o añadir.
-+ “super” me permite saltar de un constructor a otro
++ **Shift + alt  (corte vertical):** sirve para seleccionar de manera vertical para cortar o añadir.
++ **“super”**: me permite saltar de un constructor a otro
   + Sintaxis --> ***super(nombre del parametro);***
 
-> ## Código
+> ## **<span style="color:purple"> Código </span>**
 
 + ***App.java*** --> Código main, aquí se ejecuta todo lo que hice
 

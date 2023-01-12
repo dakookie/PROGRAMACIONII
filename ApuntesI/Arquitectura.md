@@ -1,18 +1,19 @@
-# N-TIER Architectura
+# **<span style="color:skyblue"> N-TIER Architectura (Padre-Hijo) </span>**
+
+**Fecha: 04-01-2023**
 
 ![arquitect](arquitectura.png)
 
-+ ***Capas de persistencia(color verde)***: Almacenar información.
-+ ***Capas verticales(color gris)***: Capas de seguridad.
++ ***Capas tomates***: Presentación.
++ ***Capas azules***: Entienden objetos de la aplicación.
++ ***Capas de persistencia(color verde)***: Almacenar información(datos).
++ ***Capas verticales(color gris)***: Capas de seguridad, no importa el lugar en el que se encuentren, deben tener seguridad.
 
 + ***Lógicas de negocio***: Procesos que se deben dar
-+ ***Reglas de negocio***: 
-
 + ***Persistencia***: Se encarga del almacenado
-
 + Las acciones las puedo empequetar en interfaces
 
-## Resumen
+> ## **<span style="color:skyblue"> Resumen (Padre-Hijo) </span>**
 
 + Organizar y crear capas de forma ordenada
 + Todo queda empaquetado en un solo ejecutable.

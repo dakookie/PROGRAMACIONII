@@ -1,7 +1,6 @@
-# Listas
+# **<span style="color:orange">Listas</span>**
 
----
-Fecha: 16/12/2022
+**Fecha: 16/12/2022**
 
 + ***List*** --> Me permite conocer la lista de cualquier cosa(propia librería y propios métodos).
 + Una lista es un arreglo.
@@ -17,7 +16,7 @@ Fecha: 16/12/2022
 
 ---
 
-> ## Código
+> ## **<span style="color:orange">Código </span>**
 
 ***Estudiante.java***
 

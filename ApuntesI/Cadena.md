@@ -1,13 +1,12 @@
-# Cadenas
+# **<span style="color:crimson">Cadenas</span>**
 
----
-Fecha: 15/12/2022
+**Fecha: 15/12/2022**
 
 + Se pueden realizar diferentes clases con los tipos de datos existentes.
 + Un nuevo for:
   + ***for-each*** --> Es un for inteligente
 
-> ## Código 
+> ## **<span style="color:crimson">Código</span>**
 
 ***Cadena***
 ```java
@@ -121,12 +120,12 @@ public class Cadena {
 
 ---
 
-## Listas
+> ## **<span style="color:crimson">Listas</span>**
 
 + Primero se pone list (se debe importar el java util).
 + Sirve para listar un conjunto de cosas.
 
-> ## Código listas
+> ## **<span style="color:crimson">Código listas</span>**
 
 ```java
 package pkArreglo;

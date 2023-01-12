@@ -1,9 +1,8 @@
-# Programación Orientada a Objetos
+# **<span style="color:lime">Programación Orientada a Objetos</span>**
 
----
-Fecha: 14/12/2022
+**Fecha: 14/12/2022**
 
-> ## Métodos
+> ## **<span style="color:lime">Métodos</span>**
 
 Ámbitos:
 
@@ -11,19 +10,20 @@ Fecha: 14/12/2022
 + (-) --> privado
 + (~) --> protegido
 
-> ## Clases
+> ## **<span style="color:lime">Clases</span>**
 
-|   Class           |
-|-------------------|
-|Propiedades        |
-|   Métodos         |
-|  Responsabilidades| 
+|   Class            |
+|--------------------|
+|Propiedades         |
+|   Métodos          |
+|  Responsabilidades | 
 
-Ejemplo gráfico:
+
+**<span style="color:red">Ejemplo gráfico</span>**
 
 ![Ejemplo de clase](ejemploPOO.png)
 
-> ## Relación de herencia
+> ## **<span style="color:lime">Relación de herencia</span>**
 
 + Es la relación que existe entre clases (dependencia).
 + La herencia es un mecanismo por el que se pueden crear nuevas clases a partir de otras existentes.
@@ -46,7 +46,7 @@ Ejemplo gráfico:
 
 ---
 
-> ## Ventajas y desventajas del uso de la herencia
+> ## **<span style="color:lime">Ventajas y desventajas del uso de la herencia</span>**
 
  | Ventajas                                | Desventajas             |
  |-----------------------------------------|-------------------------|
@@ -66,7 +66,7 @@ Ejemplo gráfico:
 + Puedo tener espacios de referencia sin memoria.
 + ***gc.star();*** --> Recolector de basura
 
-> ## Constructores
+> ## **<span style="color:lime">Constructores</span>**
 
 + Cuando pongo ***new*** se va a llamar al constructor de la clase.
 + Las constructores no se heredan.

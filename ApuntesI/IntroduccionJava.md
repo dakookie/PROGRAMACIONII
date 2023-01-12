@@ -1,12 +1,12 @@
-# Introducción JAVA
----
-Fecha: 18/11/2022
+# **<span style="color:orange">Introducción JAVA</span>**
+
+**Fecha: 18/11/2022**
 
 Para crear un proyecto en java se utilizan los comandos:
 + ctrl+shift+P
-  + Create Java Project > No build tools (sin herramientas, java en aspecto base).
+  + **Create Java Project** > No build tools (sin herramientas, java en aspecto base).
 
-> ### Consola
+> ## **<span style="color:orange">Consola</span>**
 
 Para comenzar a trabajar en un java project se debe verificar el git:
 1. git version
@@ -23,7 +23,7 @@ Para comenzar a trabajar en un java project se debe verificar el git:
 12. Cuenta ligada a la nube en el visual
 13. Subir a la nube con public
 ---
-> ### Nuevos Comandos
+> ## **<span style="color:orange">Nuevos Comandos</span>**
 
 + ***git pull*** --> Me trae los cambios hechos en la nube
 + ***git push*** --> Envia los cambios a la nube.
@@ -32,7 +32,7 @@ Para comenzar a trabajar en un java project se debe verificar el git:
 + ***mkdir*** --> Permite crear una carpeta 
 
 ---
-> #### Notas
+> ### **<span style="color:orange">Notas</span>**
 
 + Si hice algún cambio primero se debe poner un ***git status*** en consola
 + Todos los ***.class*** no se deben subir a la nube
@@ -40,8 +40,9 @@ Para comenzar a trabajar en un java project se debe verificar el git:
 + Verificar que no existan errores
 + NO OLVIDARSE DE PONER EL ***COMMIT*** para que me guarde los cambios realizados antes de ejecutar el ***git pull/git push***.
 + Para compilar en JAVA se utiliza el comando en consola: ***java src/App.java***
+
 ---
-> ### Código
+> ## **<span style="color:orange">Código</span>**
 
 ```java
 public class App {
