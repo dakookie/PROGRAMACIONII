@@ -1,9 +1,8 @@
-# Area de un Rectangulo
+# **<span style="color:brown"> Area de un Rectangulo </span>**
 
----
-Fecha: 06/12/2022
+**Fecha: 06/12/2022**
 
-> ## Codigo sin métodos
+> ## **<span style="color:brown"> Codigo sin métodos </span>**
 
 El presente codigo es para determinar el área de un rectángulo
 
@@ -43,7 +42,7 @@ public class AreaRectangulo {
 ---
 Para hacer un método se selecciona y hago clic izquierdo en refactorizar(Extract to method) y se pone un nombre.
 
-> ## Código con métodos
+> ## **<span style="color:brown"> Código con métodos </span>**
 ```java
 import java.util.Scanner;
 /**
