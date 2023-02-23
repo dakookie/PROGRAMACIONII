@@ -1,38 +1,35 @@
 package BusinessLogic;
 
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 import DataAccess.LocalidadDAC;
 import Framework.AppException;
-import BusinessLogic.Entities.Localidad;
-
+import BusinessLogic.Entities.*;
 
 public class LocalidadPaisBL {
-    public List<Localidad> GetAllLocalidad( ) throws AppException{
+    public List<Localidad> getAllPais( ) throws AppException{
         try {
             LocalidadDAC LocalidadDAC = new LocalidadDAC();  
-            List<Localidad> localidad = new ArrayList<Localidad>();
+            List<Localidad> listaLocalidad = new ArrayList<Localidad>();
             ResultSet rs = LocalidadDAC.getAllPais();
             while(rs.next())    {
-                Localidad p = new Localidad(rs.getInt("ID_LOCALIDAD")
+                Localidad l = new Localidad(rs.getInt("ID_LOCALIDAD")
                                             ,rs.getInt("ID_LOCALIDAD_PADRE")
-                                            , rs.getInt("ID_LOCALIDAD_TIPO")
-                                            , rs.getString("NOMBRE")
-                                            , rs.getString("OBSERVACION")
-                                            , rs.getString("FECHA_CREACION")
-                                            , rs.getString("FECHA_MODIFICA")
+                                            ,rs.getInt("ID_LOCALIDAD_TIPO")
+                                            ,rs.getString("NOMBRE")
+                                            ,rs.getString("OBSERVACION")
+                                            ,rs.getString("FECHA_CREACION")
+                                            ,rs.getString("FECHA_MODIFICA")
                                             ,rs.getString("ESTADO")); ;
-                localidad.add(p);
+                listaLocalidad.add(l);
             }
-            return localidad;
+            return listaLocalidad;
         } 
         catch (SQLException e) {
-            throw new AppException(e, getClass(), "getAllLocalidad()");
+            throw new AppException(e, getClass(), "getAllLocalidad");
         }
     } 
    
