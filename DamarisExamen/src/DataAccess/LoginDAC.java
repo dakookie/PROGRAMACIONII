@@ -9,18 +9,19 @@ import Framework.AppConfiguration;
 import Framework.AppException;
 
 public class LoginDAC extends SQLiteDataHelper {
-    public LoginDAC(){
+    
+    public LoginDAC() {
         super(AppConfiguration.getDBPathConnection());
     }
 
-    public ResultSet getAllUsuarios() throws AppException{
-        try {
-            String sql =    "SELECT AM_ID_USUARIOS, AM_USUARIOS, AM_CONTRASENA_ENCRIPTADA FROM USUARIOS ";
+    public ResultSet dsGetAllUsuarios() throws AppException{
+        try{
+            String sql="SELECT *"
+                        +"FROM DS_USUARIOS";
             return getResultSet(sql);
-        } 
-        catch (SQLException e) {
+        }
+        catch (SQLException e){
             throw new AppException(e, getClass(), "getAllUsuarios()");
         }
     }
-
 }

@@ -46,18 +46,10 @@ public abstract class SQLiteDataHelper {
         Statement  stmt = null;
         ResultSet  rs   = null;
        // try {
-            conn = getConnection();            // jdbc:sqlite:data\\TinderPet.db 
+            conn = getConnection();            // jdbc:sqlite:data\\DBExame.db 
             stmt = conn.createStatement();     // CRUD : select * ...
             rs   = stmt.executeQuery(sql);     //
-        // } 
-        // catch (SQLException e) {
-        //     System.out.println(e.getMessage());
-        //     throw new AppException(APP.GLOBAL.DB_EXCEPTION,"Failed to connect to database", e);
-        // }
         return rs;
     }
 }
 
-/*
- * ref: https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/database/sqlite/SQLiteOpenHelper.java
- */

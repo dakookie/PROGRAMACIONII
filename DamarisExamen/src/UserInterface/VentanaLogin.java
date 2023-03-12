@@ -1,5 +1,8 @@
 package UserInterface;
 import javax.swing.*;
+
+import Framework.AppConfiguration;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -61,9 +64,8 @@ public class VentanaLogin extends JFrame {
 
         try {
             // Establecer la conexión con la base de datos
-            System.out.println("Hola");
+            
             conn = DriverManager.getConnection("jdbc:sqlite:DBExamen.db");
-            System.out.println("Chao");
 
             while (!autenticado && intentosFallidos < 3) {
                 // Solicitar al usuario que ingrese su nombre de usuario y contraseña
@@ -109,6 +111,7 @@ public class VentanaLogin extends JFrame {
         }
     }
     public static void main(String[] args) {
+        
         new VentanaLogin();
     }
 }

@@ -11,14 +11,20 @@ import Framework.AppException;
 import BusinessLogic.Entities.Login;
 
 public class LoginBL {
-    public Login getLoginBL(String usuario, String contrasenia) throws SQLException{
-    try {
-        LoginDAC login = new LoginDAC();
-        ResultSet log = login.getLoginBL(usuario,contrasenia);
-
-    } catch (Exception e) {
-        // TODO: handle exception
-    }
+    public List<Login> dsGetAllUsuarios()  throws AppException{
+        try{
+            LoginDAC dsUsuariosDAC = new LoginDAC();
+            List<Login> dsUsuario = new ArrayList<Login>();
+            ResultSet rs = dsUsuariosDAC.dsGetAllUsuarios();
+            while(rs.next()){
+                Login usuarios = new LoginBL(rs.getString("DS_USUARIOS"),rs.getString("DS_CONTRASENIA"));
+                dsUsuario.add(usuarios);
+            }
+            return dsUsuario;
+        }
+        catch (SQLException e) {
+            throw new AppException(e, getClass());
+        }
     }
 
 }

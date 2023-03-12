@@ -18,6 +18,7 @@ public abstract class SQLiteDataHelper {
     private static Connection conn = null;
     public SQLiteDataHelper(String  dbPathConnection){
         // Definir la cadena de conneccion : jdbc:sqlite:data\\TinderPet.db
+        System.out.println(dbPathConnection);
         if (!dbPathConnection.isEmpty())
             SQLiteDataHelper.DBPathConnection = dbPathConnection;
     }

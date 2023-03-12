@@ -4,58 +4,71 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
+import UserInterface.*;
 
-import java.sql.*;
+
 
 public class App {
 
-  public static void main(String[] args) {
+  private void Login() {
     Connection conn = null;
-    PreparedStatement pstmt = null;
+    Statement stmt = null;
     ResultSet rs = null;
     Scanner scanner = new Scanner(System.in);
+    int intentosFallidos = 0;
+    boolean autenticado = false;
 
     try {
-      // Conectar a la base de datos
-      conn = DriverManager.getConnection("jdbc:sqlite:DBExamen.db");
+        // Establecer la conexión con la base de datos
+        
+        conn = DriverManager.getConnection("jdbc:sqlite:DBExamen.db");
 
-      // Pedir al usuario que ingrese su nombre de usuario y contraseña
-      System.out.print("Usuario: ");
-      String username = scanner.nextLine();
-      System.out.print("Contraseña: ");
-      String password = scanner.nextLine();
+        while (!autenticado && intentosFallidos < 3) {
+            // Solicitar al usuario que ingrese su nombre de usuario y contraseña
+            System.out.print("Nombre de usuario: ");
+            String nombreUsuario = scanner.nextLine();
+            System.out.print("Contraseña: ");
+            String contraseña = scanner.nextLine();
 
-      // Realizar la consulta
-      String sql = "SELECT * FROM Login WHERE DS_USUARIOS = ? AND DS_CONTRASENIA = ?";
-      pstmt = conn.prepareStatement(sql);
-      pstmt.setString(1, username);
-      pstmt.setString(2, password);
-      rs = pstmt.executeQuery();
+            // Verificar que el nombre de usuario y la contraseña ingresados correspondan a uno de los tres usuarios permitidos
+            stmt = (Statement) conn.createStatement();
+            rs = ((java.sql.Statement) stmt).executeQuery("SELECT * FROM LOGIN WHERE DS_USUARIOS = '" + nombreUsuario + "' AND DS_CONTRASENIA = '" + contraseña);
 
-      // Verificar si el usuario existe y si la contraseña es correcta
-      if (rs.next()) {
-        System.out.println("Bienvenido, " + username + "!");
-      } else {
-        System.out.println("Credenciales incorrectas. Intente de nuevo.");
-      }
+            if (rs.next()) {
+                autenticado = true;
+                System.out.println("Bienvenido, " + nombreUsuario + "!");
+            } else {
+                intentosFallidos++;
+                System.out.println("Credenciales incorrectas. Intente de nuevo.");
+            }
+        }
+
+        if (intentosFallidos == 3) {
+            System.out.println("Ha agotado sus intentos. Terminando el programa.");
+        }
+
     } catch (SQLException e) {
-      System.err.println("Error al conectar con la base de datos: " + e.getMessage());
+        System.err.println("Error al conectar con la base de datos: " + e.getMessage());
     } finally {
-      // Cerrar los objetos ResultSet, PreparedStatement y Connection en orden inverso
-      try {
-        if (rs != null) {
-          rs.close();
+        // Cerrar los objetos ResultSet, Statement y Connection en orden inverso
+        try {
+            if (rs != null) {
+                rs.close();
+            }
+            if (stmt != null) {
+                ((Connection) stmt).close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al cerrar los objetos de base de datos: " + e.getMessage());
         }
-        if (pstmt != null) {
-          pstmt.close();
-        }
-        if (conn != null) {
-          conn.close();
-        }
-      } catch (SQLException e) {
-        System.err.println("Error al cerrar los objetos de base de datos: " + e.getMessage());
-      }
     }
+}
+  public static void main(String[] args) {
+    new VentanaLogin();
   }
 }
+
 
