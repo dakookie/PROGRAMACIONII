@@ -38,10 +38,10 @@
                     <mxGeometry x="200.99" y="-19" width="66.78" height="340.74" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="&lt;span style=&quot;color: rgb(26, 26, 26);&quot;&gt;&lt;b&gt;Business Logic&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" parent="1" vertex="1">
-                    <mxGeometry x="164.5" y="128.08" width="63" height="47" as="geometry"/>
+                    <mxGeometry x="150.5" y="128.08" width="63" height="47" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="&lt;font color=&quot;#1a1a1a&quot;&gt;Business Entities&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" parent="1" vertex="1">
-                    <mxGeometry x="242.5" y="128.08" width="63" height="47" as="geometry"/>
+                    <mxGeometry x="232.5" y="128.08" width="63" height="47" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="&lt;font color=&quot;#1a1a1a&quot;&gt;App/Service &lt;b&gt;Facade &lt;/b&gt;:&amp;nbsp; Contracts, Service, WF Service&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="64.38" y="88.46000000000001" width="340" height="26" as="geometry"/>
