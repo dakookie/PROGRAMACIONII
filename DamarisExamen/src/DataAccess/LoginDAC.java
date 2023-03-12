@@ -17,7 +17,7 @@ public class LoginDAC extends SQLiteDataHelper {
     public ResultSet getAllLogin() throws AppException{
         try {
             String sql = "SELECT * FROM Login" +
-                         "WHERE DS_ID_USUARIOS = NULL";
+                         "WHERE DS_ID_USUARIOS = ?";
             return getResultSet(sql);
         } 
         catch (SQLException e) {
