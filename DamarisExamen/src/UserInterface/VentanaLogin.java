@@ -53,8 +53,9 @@ public class VentanaLogin extends JFrame {
         getContentPane().add(panel);
         setVisible(true);
     }
-
+    
     private void Login() {
+        
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
@@ -64,8 +65,6 @@ public class VentanaLogin extends JFrame {
 
         try {
             // Establecer la conexión con la base de datos
-            
-            conn = DriverManager.getConnection("jdbc:sqlite:DBExamen.db");
 
             while (!autenticado && intentosFallidos < 3) {
                 // Solicitar al usuario que ingrese su nombre de usuario y contraseña

@@ -21,7 +21,7 @@ public class LoginDAC extends SQLiteDataHelper {
             return getResultSet(sql);
         }
         catch (SQLException e){
-            throw new AppException(e, getClass(), "getAllUsuarios()");
+            throw new AppException(e, getClass(), "dsgetAllUsuarios()");
         }
     }
 }
