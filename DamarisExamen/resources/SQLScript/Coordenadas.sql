@@ -1,9 +1,5 @@
-/* Copyright (C) 2K23, pat_mic
-------------------------------
-Creacion de la tabla Localidad con datos
-30.ene.2k23
-Version 1.0
-*/
+
+
 
 DROP TABLE IF EXISTS LOGIN;
 CREATE TABLE IF NOT EXISTS LOGIN
